@@ -1,5 +1,7 @@
-const { useRef, useState } = require('react');
-const { useEffect } = require('react');
+// const { useRef, useState } = require('react');
+// const { useEffect } = require('react');
+
+import { useEffect, useState, useRef } from "react";
 
 const useChartData = () => {
   const [chartData, setChartData] = useState({});
