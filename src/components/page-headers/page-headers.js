@@ -34,7 +34,6 @@ PageHeader.propTypes = {
   bgColor: PropTypes.string,
   className: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object),
-  // eslint-disable-next-line react/forbid-prop-types
   buttons: PropTypes.array,
   ghost: PropTypes.bool,
 };

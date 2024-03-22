@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Row, Col, Form, DatePicker, Input, Select } from 'antd';
 import propTypes from 'prop-types';

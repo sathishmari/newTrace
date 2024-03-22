@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 import React, { Component } from 'react';
 import { Layout, Button, Row, Col } from 'antd';
 import FeatherIcon from 'feather-icons-react';

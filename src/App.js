@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { hot } from 'react-hot-loader/root';
 import { Provider, useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
@@ -35,7 +34,6 @@ function ProviderConfig() {
     if (!unmounted) {
       setPath(window.location.pathname);
     }
-    // eslint-disable-next-line no-return-assign
     return () => (unmounted = true);
   }, [setPath]);
 

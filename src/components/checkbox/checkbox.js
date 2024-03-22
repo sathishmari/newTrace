@@ -1,4 +1,4 @@
-/* eslint-disable react/forbid-prop-types */
+
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { CheckboxStyle } from './style';
@@ -37,7 +37,6 @@ const Checkbox = props => {
     if (onChangeTriger) {
       onChangeTriger(state.checkedList);
     }
-    // eslint-disable-next-line
   }, [state]);
 
   const onCheckAllChange = e => {

@@ -1,4 +1,4 @@
-// eslint-disable-next-line max-classes-per-file
+
 import React, { useState } from 'react';
 import { addDays } from 'date-fns';
 import 'react-date-range/dist/styles.css'; // main style file
@@ -60,7 +60,6 @@ const DateRangePickerOne = () => {
 };
 
 class CustomDateRange extends React.Component {
-  // eslint-disable-next-line react/state-in-constructor
   state = {
     startValue: null,
     endValue: null,

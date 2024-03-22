@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Progress, Tag } from 'antd';
+import { Tag } from 'antd';
 import FeatherIcon from 'feather-icons-react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { ProjectCard } from './style';
@@ -16,25 +16,26 @@ import { Button } from '../../components/buttons/buttons';
 // import useSelection from 'antd/lib/table/hooks/useSelection';
 // import Styled from 'styled-components';
 function GridCard({ value }) {
-  const { id, title, status, content, percentage } = value;
+  const { title, content } = value;
 
   const onCancel = () => {
     setOpen(false);
-  }
+  };
   const onSubmit = () => {
     onCancel();
-  }
+  };
 
-  const VersionData = [{ "id": "NTP01-V_09", className: "early", status: 'Design' },
-  { "id": "NTP01-V_08", className: "late", status: 'Manufacturing' },
-  { "id": "NTP01-V_07", className: "progress", status: 'Testing' },
-  { "id": "NTP01-V_06", className: "complete", status: 'ARCHEIVED' },
-  { "id": "NTP01-V_05", className: "complete", status: 'ARCHEIVED' },
-  { "id": "NTP01-V_04", className: "complete", status: 'ARCHEIVED' },
-  { "id": "NTP01-V_03", className: "complete", status: 'ARCHEIVED' },
-  { "id": "NTP01-V_02", className: "complete", status: 'ARCHEIVED' },
-  { "id": "NTP01-V_01", className: "complete", status: 'ARCHEIVED' },
-  ]
+  const VersionData = [
+    { id: 'NTP01-V_09', className: 'early', status: 'Design' },
+    { id: 'NTP01-V_08', className: 'late', status: 'Manufacturing' },
+    { id: 'NTP01-V_07', className: 'progress', status: 'Testing' },
+    { id: 'NTP01-V_06', className: 'complete', status: 'ARCHEIVED' },
+    { id: 'NTP01-V_05', className: 'complete', status: 'ARCHEIVED' },
+    { id: 'NTP01-V_04', className: 'complete', status: 'ARCHEIVED' },
+    { id: 'NTP01-V_03', className: 'complete', status: 'ARCHEIVED' },
+    { id: 'NTP01-V_02', className: 'complete', status: 'ARCHEIVED' },
+    { id: 'NTP01-V_01', className: 'complete', status: 'ARCHEIVED' },
+  ];
 
   const [open, setOpen] = useState(false);
   return (
@@ -90,18 +91,18 @@ function GridCard({ value }) {
           <div className="project-assignees">
             {/* <p>Assigned To</p> */}
             <ul style={{ flexDirection: 'column' }}>
-              {
-                VersionData.map((ele)=>
+              {VersionData.map((ele) => (
                 <NavLink to="/versionDetails">
                   <li>
-                  <span>{ele.id}</span>
-                  <Tag style={{backgroundColor :'#fff'}} className= {ele.className}>{ele.status}</Tag>
-                  {/* <span className= {ele.className}>{ele.status}</span> */}
-                  {/* <span style={{color : ele.status === "Design" ?'primary-color' : ele.status === "ARCHEIVED" ? 'success-color' : ele.status === "Testing" ?'danger-color' :'warning-color' }}>{ele.status}</span> */}
-                </li>
+                    <span>{ele.id}</span>
+                    <Tag style={{ backgroundColor: '#fff' }} className={ele.className}>
+                      {ele.status}
+                    </Tag>
+                    {/* <span className= {ele.className}>{ele.status}</span> */}
+                    {/* <span style={{color : ele.status === "Design" ?'primary-color' : ele.status === "ARCHEIVED" ? 'success-color' : ele.status === "Testing" ?'danger-color' :'warning-color' }}>{ele.status}</span> */}
+                  </li>
                 </NavLink>
-                )
-              }
+              ))}
             </ul>
           </div>
         </div>

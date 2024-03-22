@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import { Row, Col, Form, Input, Select, Upload, message } from 'antd';
 import { Link } from 'react-router-dom';

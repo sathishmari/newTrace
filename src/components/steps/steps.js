@@ -39,7 +39,6 @@ const Steps = ({
         setTimeout(validationStatus, [300]);
       });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [validation]);
   const next = () => {
     onNext(state.currents);

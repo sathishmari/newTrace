@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 const textRefactor = (text, size) => {
   return `${text
     .split(' ')
