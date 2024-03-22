@@ -5,6 +5,8 @@ import { Provider, useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
+import 'antd/dist/antd.less';
+
 import store from './redux/store';
 import Admin from './routes/admin';
 import versionDetailRoute from './routes/admin/versionDetails';
@@ -13,7 +15,6 @@ import Auth from './routes/auth';
 import './static/css/style.css';
 import config from './config/config';
 import ProtectedRoute from './components/utilities/protectedRoute';
-import 'antd/dist/antd.less';
 
 const { theme } = config;
 

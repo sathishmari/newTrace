@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
- import { Cards } from '../../components/cards/frame/cards-frame';
- import { Button } from '../../components/buttons/buttons';
- import { Row, Col, Form, Select, Table } from 'antd'
-import CreateElectrochem from '../ProjectModal/CreateElectrochem';
+import { Row, Col, Form, Select, Table } from 'antd';
 import FeatherIcon from 'feather-icons-react';
 
+import { Cards } from '../../components/cards/frame/cards-frame';
+import { Button } from '../../components/buttons/buttons';
+import CreateElectrochem from '../ProjectModal/CreateElectrochem';
 
 const ElectrochemDetailsPage = () => {
     

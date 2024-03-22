@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Input, Select, Col, Row, DatePicker } from 'antd';
-import propTypes from 'prop-types';
-import { Cards } from '../../components/cards/frame/cards-frame';
 import { Button as Button2 } from 'antd';
+import propTypes from 'prop-types';
+import FeatherIcon from 'feather-icons-react';
+
+import { Cards } from '../../components/cards/frame/cards-frame';
 import { Button } from '../../components/buttons/buttons';
 import { Modal } from '../../components/modals/antd-modals';
 import { CheckboxGroup } from '../../components/checkbox/checkbox';
 import { BasicFormWrapper } from '../styled';
-import FeatherIcon from 'feather-icons-react'
 
 const { Option } = Select;
 const dateFormat = 'MM/DD/YYYY';
