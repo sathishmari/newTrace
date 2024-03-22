@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
 import FeatherIcon from 'feather-icons-react';
-
 import { Row, Col, Form, Select, Input, Table, Upload, DatePicker } from 'antd';
+
 import { HorizontalFormStyleWrap } from './style/formStyle';
 import { Main, BasicFormWrapper, } from './style/wrapperStyle';
-import { Cards } from '../cards/frame/cards-frame';
-import { Button } from '../buttons/buttons';
 import Manufacture from './components/formForManufacturer';
 import VendorModel from './components/vendorModel';
 import ManufactureDateForm from './components/manufactureDateForm';
 import ProtoTypeHeader from './components/protoTypeInfo';
 
-
+import { Cards } from '../cards/frame/cards-frame';
+import { Button } from '../buttons/buttons';
 
 const { Option } = Select;
 const { TextArea } = Input;
-
 
 function Manufacturing() {
     const [ProtoTypeName, setProtoTypeName] = useState('');

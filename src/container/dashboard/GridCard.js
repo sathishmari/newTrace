@@ -3,15 +3,18 @@ import { Progress, Tag } from 'antd';
 import FeatherIcon from 'feather-icons-react';
 import { Link, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+
 import { ProjectCard } from './style';
+
+import CreateVersion from '../ProjectModal/CreateVersion';
+
 import { Cards } from '../../components/cards/frame/cards-frame';
-import { Dropdown } from '../../components/dropdown/dropdown';
+// import { Dropdown } from '../../components/dropdown/dropdown';
 import { textRefactor } from '../../components/utilities/utilities';
 import { Button } from '../../components/buttons/buttons';
-import CreateVersion from '../ProjectModal/CreateVersion';
-import useSelection from 'antd/lib/table/hooks/useSelection';
-import Styled from 'styled-components';
 
+// import useSelection from 'antd/lib/table/hooks/useSelection';
+// import Styled from 'styled-components';
 function GridCard({ value }) {
   const { id, title, status, content, percentage } = value;
 

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Input, Select, Col, Row, DatePicker, Upload } from 'antd';
-import propTypes from 'prop-types';
+// import propTypes from 'prop-types';
+import { Link } from 'react-router-dom/cjs/react-router-dom';
+
 import { Button } from '../../buttons/buttons';
 import { Modal } from '../../modals/antd-modals';
 import { BasicFormWrapper } from '../style/wrapperStyle';
-import { Link } from 'react-router-dom/cjs/react-router-dom';
+
 
 const { Option } = Select;
 const dateFormat = 'MM/DD/YYYY';

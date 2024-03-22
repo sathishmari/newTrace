@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Input, Select, Col, Row, DatePicker, TimePicker, Upload, message } from 'antd';
+import moment from 'moment';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom/cjs/react-router-dom';
+
 import { BasicFormWrapper } from '../style/wrapperStyle';
 import { Modal } from '../../modals/antd-modals';
 import { Button } from '../../buttons/buttons';
-import moment from 'moment';
-import { Link } from 'react-router-dom/cjs/react-router-dom';
+
 
 const { Option } = Select;
 
